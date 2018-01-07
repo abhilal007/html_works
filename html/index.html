@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body class="contain">
+<script type="text/javascript">
+  function msg(){
+
+    var s = document.signup.fs_name.value;
+    alert("hello! awesome " + s);
+  }
+</script>
+<div padding="16" >
+  <form style="text-align: center;font-style: italic;" action="welcome.html" name="signup">
+  <label for ="basic login"> <h2>Login page</h2></label><br>
+  First name: <input type="text" name="fs_name"> <br><br>
+
+  Last Name: <input type="text" name="ls_name"><br><br>
+
+  Password: <input type="password" name="password"><br><br>
+
+  Gender:  <input type="radio" name="gen">male  <input type="radio" name="gen">female <br><br>
+
+  Phone Number: <input type="numeric" name="phone" maxlength="10"><br><br>
+
+  Date of birth: <input type="date" name="DOB"><br><br>
+
+  E-mail : <input type="email" name="user_email"><br><br>
+
+  Premenent Address : <textarea></textarea><br><br>
+
+  <input type="checkbox" name="find"> same as above<br><br>
+
+  Contact Address: <textarea></textarea><br><br>
+
+  Subjects:
+  <select name="select-choice" id="select-choice">
+      <option value="English">English</option>
+      <option value="Computer">Computer</option>
+      <option value="Science">Science</option>
+    </select><br><br>
+
+  Education:
+    <input type="checkbox" name="qual"> U.G
+    <input type="checkbox" name="qual"> P.G
+    <input type="checkbox" name="qual"> PhD<br><br>
+
+  Profile pic:
+  <input type="file" name="profile"><br><br>
+  <input type="submit" name="submit" value="submit" onclick="msg()">
+  <input type="reset" name="reset">
+  <input type="button" name="getval" onclick="msg()" value="button">
+  </form>
+</div>
+-
+</body>
+
+</html>

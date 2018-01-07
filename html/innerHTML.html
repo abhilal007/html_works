@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>inner html</title>
+</head>
+<body>
+<script type="text/javascript">
+  function showCommentform () {
+    var data = "Name: <br> <input type='text name = 'name'><br> Comment:<br> <textarea rows='5' cols='50'>"+"</textarea><br><input type = 'submit' value = 'comment'>";
+    document.getElementById('mylocation').innerHTML = data;
+
+  }
+  function validate(){
+    var msg;
+    if(document.myform.userpass.value.length>5){
+      msg="good";
+    }
+    else{
+      msg = "poor";
+    }
+    document.getElementById('findlocation').innerText=msg;
+  }
+
+</script>
+<form name="myform">
+<input type="button" value="comment" onclick="showCommentform()">
+<div id="mylocation"></div>
+<input type="password" name="userpass" onkeyup="validate()">
+Strength: <span id = "findlocation">no strength</span>
+
+</form>
+</body>
+</html>
